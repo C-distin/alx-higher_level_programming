@@ -1,6 +1,6 @@
 # ALX Higher Level Programming
 
-> This repo contains directories that will inhabit the task files
+> This repo contains directories that inhabits the task files
 
 ## Author
 
