@@ -1,2 +1,2 @@
-import this as easter_egg
-print(easter_egg.__doc__)
+#!/usr/bin/python3
+import this
