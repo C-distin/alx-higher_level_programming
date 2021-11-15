@@ -10,7 +10,7 @@ This directory contains task files for the 0x00-python-hello_world
 > * [4-print_float.py](https://github.com/C-distin/alx-higher_level_programming/blob/main/0x00-python-hello_world/4-print_float.py) - Python code to print the float stored in the variable `number` with a precision of 2 digits
 > * [5-print_string.py](https://github.com/C-distin/alx-higher_level_programming/blob/main/0x00-python-hello_world/5-print_string.py) - Python code to print 3 times a string stored in the variable str, followed by its first 9 characters
 > * [6-concat.py](https://github.com/C-distin/alx-higher_level_programming/blob/main/0x00-python-hello_world/6-concat.py) - Python code to print `Welcome to Holberton School!`
-> * Coming Soon
+> * [7-edges](https://github.com/C-distin/alx-higher_level_programming/blob/main/0x00-python-hello_world/7-edges.py) - Python code to trim string stored to variable `word` to `word_first_3`, `word_last_2` and `middle_word`
 > * Coming Soon
 > * Coming Soon
 > * Coming Soon
