@@ -23,4 +23,4 @@
 ## Author
 
 > ### Patrick Annang [@C-distin](https://github.com/C-distin)
-> [:twitter](https://twitter.com/ataa_nkpa1)
+> [:twitter:](https://twitter.com/ataa_nkpa1)
