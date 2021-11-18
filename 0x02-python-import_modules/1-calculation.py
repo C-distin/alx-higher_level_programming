@@ -8,13 +8,13 @@ if __name__ == "__main__":
     b = 5
 
     # Call the add() function from the calculator module
-    print("{:d} + {:d} = {:d}".format(a, b, calc.add(a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, calc.add(a, b)), end="")
 
     # Call the sub() function from the calculator module
-    print("{:d} - {:d} = {:d}".format(a, b, calc.sub(a, b)))
+    print("{:d} - {:d} = {:d}".format(a, b, calc.sub(a, b)), end="")
 
     # Call the mul() function from the calculator module
-    print("{:d} * {:d} = {:d}".format(a, b, calc.mul(a, b)))
+    print("{:d} * {:d} = {:d}".format(a, b, calc.mul(a, b)), end="")
 
     # Call the div() function from the calculator module
-    print("{:d} / {:d} = {:d}".format(a, b, calc.div(a, b)))
+    print("{:d} / {:d} = {:d}".format(a, b, calc.div(a, b)), end="")
