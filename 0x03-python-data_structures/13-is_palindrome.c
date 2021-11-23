@@ -2,9 +2,9 @@
 
 /**
  * reverse_listint - reverses a singly-linked list
- * 
+ *
  * @head: head list
- * 
+ *
  * Return: a pointer to the first node of the reversed list
  */
 
@@ -16,6 +16,7 @@ listint_t *reverse_listint(listint_t **head)
 	while (current != NULL)
 	{
 		listint_t *next = current->next;
+
 		current->next = prev;
 		prev = current;
 		current = next;
@@ -27,9 +28,9 @@ listint_t *reverse_listint(listint_t **head)
 /**
  * is_palindrome - a function that checks if a singly linked
  * list is a palindrome
- * 
+ *
  * @head: head list
- * 
+ *
  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
  */
 int is_palindrome(listint_t **head)
