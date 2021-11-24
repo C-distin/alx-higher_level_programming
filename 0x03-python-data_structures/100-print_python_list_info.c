@@ -2,16 +2,16 @@
 
 /**
  * print_python_list_info - function that prints basic info about a python list
- * 
+ *
  * @p: python list
- * 
+ *
  * Return: void
  */
 void print_python_list_info(PyObject *p)
 {
 	Py_ssize_t size = PyList_Size(p);
 	PyObject *item;
-	int i;
+	long int i;
 
 	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", ((PyListObject *)p)->allocated);
