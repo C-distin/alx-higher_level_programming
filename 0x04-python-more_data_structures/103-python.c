@@ -17,7 +17,7 @@ void print_python_list(PyObject *p)
 
 	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %d\n", size);
-	printf("[*] Allocated = %lu\n", (unsigned long)p->ob_item);
+	printf("[*] Allocated = %lu\n", (unsigned long)p->ob_item[i]);
 
 	for (i = 0; i < size; i++)
 	{
@@ -38,8 +38,8 @@ void print_python_bytes(PyObject *p)
 	size = PyBytes_Size(p);
 
 	printf("[*] Size of the Python Byte String = %d\n", size);
-	printf("[*] Allocated = %lu\n", (unsigned long)p->ob_item);
-	
+	printf("[*] Allocated = %lu\n", (unsigned long)p->ob_item[i]);
+
 	for (i = 0; i < size; i++)
 	{
 		printf("Element %d: %d\n", i, PyBytes_AS_STRING(p)[i]);
