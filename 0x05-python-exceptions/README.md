@@ -15,8 +15,8 @@ This project is about:
 
 ## Files
 
-### File | Description
----|---
+File | Description
+--- | ---
 Coming soon | Coming soon
 Coming soon | Coming soon
 Coming soon | Coming soon
