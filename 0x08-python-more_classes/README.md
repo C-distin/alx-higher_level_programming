@@ -2,7 +2,7 @@
 
 ## Description
 
-- This project is about:
+This project is about:
 - Why Python programming is awesome
 - What is OOP
 - “first-class everything”
