@@ -1,0 +1,29 @@
+# Testing add_integer function
+===============================
+
+Import the function from module
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Addition with two positive integers
+	>>> add_integer(1, 2)
+	3
+
+Addition with one positive and one negative integer
+	>>> add_integer(100, -2)
+	98
+
+Addition with only a being given
+	>>> add_integer(2)
+	100
+
+Addition of a float and a negative integer
+	>>> add_integer(100.3, -2)
+	98
+
+Addition of an integer number and a string
+	>>> add_integer(4, "School")
+	b must be an integer
+
+Addition with no inputs
+	>>> add_integer(None)
+	a must be an integer
