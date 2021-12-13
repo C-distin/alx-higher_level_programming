@@ -8,11 +8,13 @@ class Rectangle:
     """
     A class that defines a rectangle
 
-        Attributes:
-                number_of_instances: number of instances of the class
+    Attributes:
+            number_of_instances: number of instances of the class
+            print_symbol: symbol used to print the rectangle
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -88,12 +90,9 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-        else:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    print("#", end="")
-                print()
-            return ""
+        for i in range(self.__height - 1):
+            print(self.print_symbol * self.__width)
+        return str(str(self.print_symbol) * self.__width)
 
     def __repr__(self):
         """
