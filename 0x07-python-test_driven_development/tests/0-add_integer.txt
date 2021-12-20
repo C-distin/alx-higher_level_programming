@@ -22,8 +22,12 @@ Addition of a float and a negative integer
 
 Addition of an integer number and a string
 	>>> add_integer(4, "School")
-	b must be an integer
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
 
 Addition with no inputs
 	>>> add_integer(None)
-	a must be an integer
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
