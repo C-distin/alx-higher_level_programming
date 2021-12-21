@@ -13,10 +13,14 @@ class MyInt(int):
         """
         Override the == operator
         """
-        return self.__int__() != other
+        if int.__eq__(self, other) is True:
+            return False
+        return True
 
     def __ne__(self, other):
         """
         Override the != operator
         """
-        return self.__int__() == other
+        if int.__ne__(self, other) is True:
+            return False
+        return True
