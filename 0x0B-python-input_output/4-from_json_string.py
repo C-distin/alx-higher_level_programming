@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-function that returns a JSON representation of an object
+function that returns an object represented by JSON string
 """
 
 
@@ -8,8 +8,8 @@ function that returns a JSON representation of an object
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_obj):
     """
-    function that returns a JSON representation of an object
+    function that returns an object represented by JSON string
     """
-    return json.dumps(my_obj)
+    return json.loads(my_obj)
