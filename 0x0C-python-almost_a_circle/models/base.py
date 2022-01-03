@@ -6,6 +6,7 @@ Base class for all models
 import json
 import csv
 import os
+import turtle
 
 
 class Base:
@@ -123,3 +124,22 @@ class Base:
                 instances.append(temp)
 
         return instances
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """
+        Draw the rectangles and squares
+        """
+        t = turtle.Turtle()
+        t.speed(0)
+        t.hideturtle()
+        t.penup()
+        t.goto(-500, 500)
+        t.pendown()
+        t.pensize(3)
+        t.color("crimson", "black")
+        t.begin_fill()
+        t.setheading(0)
+        t.forward(800)
+        t.setheading(350)
+        t.forward(800)
