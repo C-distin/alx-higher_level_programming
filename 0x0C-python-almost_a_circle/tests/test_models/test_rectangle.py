@@ -6,7 +6,7 @@ import unittest
 import json
 import sys
 from models.base import Base
-from models.rectange import Rectangle
+from models.rectangle import Rectangle
 from models.square import Square
 
 
