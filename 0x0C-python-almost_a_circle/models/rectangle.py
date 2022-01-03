@@ -1,26 +1,26 @@
 #!/usr/bin/python3
 """
-Rectangle class
+    contains class Rectangle which implements Base.
 """
-
 from models.base import Base
 
 
-class Rectangle:
+class Rectangle(Base):
     """
-    Class that defines a rectangle
+        class Rectangle implements Base.
+        Methods:
+            __init__()
     """
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initializes the class
+            Initializes the instance of the class
 
-        Args:
-            width (int): width of the rectangle
-            height (int): height of the rectangle
-            x (int): x coordinate of the rectangle
-            y (int): y coordinate of the rectangle
-            id (int): identity of the rectangle
+            Args:
+                width: width of the rectangle
+                height: height of the rectangle
+                x: x coordinate of the rectangle
+                y: y coordinate of the rectangle
+                id: id of the rectangle
         """
         super().__init__(id)
         self.width = width
@@ -31,55 +31,75 @@ class Rectangle:
     @property
     def width(self):
         """
-        Getter for width
+            getter for width
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        Setter for width
+            setter for width
         """
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+
         self.__width = value
 
     @property
     def height(self):
         """
-        Getter for height
+            getter for height
         """
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-        Setter for height
+            setter for height
         """
+        if type(value) != int:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
+
         self.__height = value
 
     @property
     def x(self):
         """
-        Getter for x
+            getter for x
         """
         return self.__x
 
     @x.setter
     def x(self, value):
         """
-        Setter for x
+            setter for x
         """
+        if type(value) != int:
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
+
         self.__x = value
 
     @property
     def y(self):
         """
-        Getter for y
+            getter for y
         """
         return self.__y
 
     @y.setter
     def y(self, value):
         """
-        Setter for y
+            setter for y
         """
+        if type(value) != int:
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
+
         self.__y = value
