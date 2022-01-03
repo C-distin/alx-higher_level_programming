@@ -7,9 +7,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-        class Rectangle implements Base.
-        Methods:
-            __init__()
+        class Rectangle implements Base
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -120,3 +118,11 @@ class Rectangle(Base):
         for i in range(self.__height):
             print(" " * self.__x, end="")
             print("#" * self.__width)
+
+    def __str__(self):
+        """
+            returns string representation of the rectangle
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
+                                                       self.__y, self.__width,
+                                                       self.__height)
