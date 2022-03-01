@@ -1,7 +1,3 @@
 #!/usr/bin/node
-const myVar = process.argv;
-if (myVar.length > 2) {
-  console.log('Argument found');
-} else {
-  console.log('No argument found');
-}
+const myVar = process.argv.length;
+console.log(myVar === 2 ? 'No argument found' : myVar === 3 ? 'Argument found' : 'Arguments found');

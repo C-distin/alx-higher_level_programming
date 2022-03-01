@@ -1,7 +1,4 @@
 #!/usr/bin/node
-const myVar = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-let a = 0;
-while (a < myVar.length) {
-  console.log(myVar[a]);
-  a++;
-}
+console.log('C is fun');
+console.log('Python is cool');
+console.log('Javascript is amazing');
