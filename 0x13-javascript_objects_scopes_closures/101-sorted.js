@@ -2,7 +2,7 @@
 const Dict = require('./data/101-data').dict;
 
 const sortDict = {};
-for (let key in Dict) {
+for (const key in Dict) {
   if (sortDict[Dict[key]] === undefined) {
     sortDict[Dict[key]] = [];
   }
