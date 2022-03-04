@@ -14,12 +14,12 @@ This project is about:
 ## More Information
 
 * All files were interpreted/compiled on `Ubuntu 20.04 LTS` using `python3`
-* All files begin with `#!/usr/bin/python3
+* All files begin with `#!/usr/bin/python3`
 * All files executable
 * All files will be executed with `MYSQLdb`
 * All files will be executed with `SQLAlchemy`
-* The code uses `pycodestyle (2.7.*)
+* The code uses `pycodestyle (2.7.*)`
 
-# Author
+## Author
 
 > Patrick Annang
