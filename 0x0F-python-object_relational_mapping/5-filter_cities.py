@@ -11,9 +11,8 @@ if __name__ == "__main":
     cursor = db.cursor()
     cursor.execute("SELECT cities.id, cities.name, states.name\
         FROM cities JOIN states ON cities.state_id = states.id\
-        WHERE states.name LIKE %s ORDER BY cities.id ASC", (argv[4],))
+        WHERE states.name = %s ORDER BY cities.id ASC", (argv[4],))
     rows = cursor.fetchall()
-    for row in rows:
-        print('{:d}, {:s}'.format(row[0], row[1]))
+    print(', '.join(["{:s}".format(row[0]) for row in cursor.fetchall()]))
     cursor.close()
     db.close()
