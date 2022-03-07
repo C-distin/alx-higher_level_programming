@@ -14,6 +14,6 @@ if __name__ == "__main":
         WHERE states.name LIKE %s ORDER BY cities.id ASC", (argv[4],))
     rows = cursor.fetchall()
     for row in rows:
-        print(", ".join(map(str, row)))
+        print('{:d} {:s} {:s}'.format(row[0], row[1]))
     cursor.close()
     db.close()
